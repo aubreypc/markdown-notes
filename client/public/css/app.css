@@ -1,4 +1,4 @@
-html, body, div#root, .full-height {
+html, body, div#root, .full-height, .DraftEditor-root, .DraftEditor-editorContainer, .public-DraftEditor-content {
 	height: 100%;
 }
 
@@ -13,4 +13,12 @@ html, body, div#root, .full-height {
 
 .rendered {
 	border-left: 1px solid black;
+}
+
+.octicon-triangle-left:hover, .octicon-triangle-right:hover {
+	cursor: pointer;
+}
+
+.editor-container {
+	background: #f5f5f5;
 }

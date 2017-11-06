@@ -29,7 +29,7 @@ class App extends Component {
 	render() {
 		return <div className="container-fluid full-height">
 			<div className="row full-height">
-				<div className={"col-sm-4 full-height " + (this.state.editorCollapsed ? "collapse" : "")}>
+				<div className={"col-sm-4 full-height editor-container " + (this.state.editorCollapsed ? "collapse" : "")}>
 					<MdEditor onEditorChange={this.onEditorChange}/>
 				</div>
 				<div className="col-sm-8 full-height rendered">
