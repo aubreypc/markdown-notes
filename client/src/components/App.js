@@ -18,10 +18,10 @@ class App extends Component {
 	render() {
 		return <div className="container-fluid">
 			<div className="row">
-				<div className="col-sm-6">
+				<div className="col-sm-4">
 					<MdEditor onEditorChange={this.onEditorChange}/>
 				</div>
-				<div className="col-sm-6">
+				<div className="col-sm-8">
 					<MdRender mdString={this.state.editorValue}/>
 				</div>
 			</div>
