@@ -1,18 +1,24 @@
 module.exports = function(grunt) {
 	grunt.initConfig({
 		copy: {
-			main: {
+			bootstrap_server: {
 				cwd: "node_modules/bootstrap/dist/",
 				src: "**/*",
 				dest: "public/",
 				expand: true,
 			},
-			client: {
+			bootstrap_client: {
 				cwd: "node_modules/bootstrap/dist/",
 				src: "**/*",
 				dest: "client/public",
 				expand: true,
-			}
+			},
+			katex: {
+				cwd: "client/node_modules/katex/dist/",
+				src: "**/*",
+				dest: "client/public/",
+				expand: true,
+			},
 		},
 	});
 	
