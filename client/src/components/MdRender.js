@@ -33,10 +33,10 @@ class MdRender extends React.Component {
 	}
 
 	render() {
-		var renderedTex = this.renderAllTex(this.props.mdString);
-		console.log(renderedTex);
+		var renderedMd = marked(this.props.mdString);
+		var renderedTex = this.renderAllTex(renderedMd);
 		return <div dangerouslySetInnerHTML={{
-			__html: marked(renderedTex)
+			__html: renderedTex
 		}}></div>;
 	}
 }
