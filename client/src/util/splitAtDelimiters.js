@@ -30,7 +30,7 @@ const findEndOfMath = function(delimiter, text, startIndex) {
     return -1;
 };
 
-const splitAtDelimiters = function(startData, leftDelim, rightDelim, display) {
+const splitAtDelimiters = function(startData, leftDelim, rightDelim, del_type) {
     const finalData = [];
 
     for (let i = 0; i < startData.length; i++) {
@@ -74,14 +74,13 @@ const splitAtDelimiters = function(startData, leftDelim, rightDelim, display) {
                     }
 
                     finalData.push({
-                        type: "math",
+                        type: del_type,
                         data: text.slice(
                             currIndex + leftDelim.length,
                             nextIndex),
                         rawData: text.slice(
                             currIndex,
                             nextIndex + rightDelim.length),
-                        display: display,
                     });
 
                     currIndex = nextIndex + rightDelim.length;
@@ -103,3 +102,4 @@ const splitAtDelimiters = function(startData, leftDelim, rightDelim, display) {
 };
 
 export default splitAtDelimiters;
+

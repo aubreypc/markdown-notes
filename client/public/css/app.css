@@ -22,3 +22,14 @@ html, body, div#root, .full-height, .DraftEditor-root, .DraftEditor-editorContai
 .editor-container {
 	background: #f5f5f5;
 }
+
+.render-main {
+	margin-left: 2em;
+}
+
+img.emoji {
+   height: 1em;
+   width: 1em;
+   margin: 0 .05em 0 .1em;
+   vertical-align: -0.1em;
+}

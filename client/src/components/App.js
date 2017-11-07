@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import MdEditor from './MdEditor';
-import MdRender from './MdRender';
+//import MdRender from './MdRender';
+import Render from './Render';
 
 class App extends Component {
 
@@ -34,7 +35,7 @@ class App extends Component {
 				</div>
 				<div className="col-sm-8 full-height rendered">
 				{this.collapseBtn()}
-				<MdRender mdString={this.state.editorValue}/>
+				<Render body={this.state.editorValue}/>
 				</div>
 			</div>
 		</div>;

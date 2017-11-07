@@ -19,6 +19,12 @@ module.exports = function(grunt) {
 				dest: "client/public/",
 				expand: true,
 			},
+			twemoji: {
+				cwd: "client/node_modules/twemoji/dist/svg",
+				src: "*.svg",
+				dest: "client/public/svg",
+				expand: true,
+			}
 		},
 	});
 	
